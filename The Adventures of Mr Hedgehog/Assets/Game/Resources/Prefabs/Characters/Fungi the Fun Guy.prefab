@@ -1,0 +1,639 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6780223465652880043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6777191180602326189}
+  m_Layer: 0
+  m_Name: joint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6777191180602326189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780223465652880043}
+  m_LocalRotation: {x: 0.32532138, y: -0.6278264, z: -0.32532138, w: 0.6278264}
+  m_LocalPosition: {x: -0, y: 0.021855593, z: 0.28345343}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children:
+  - {fileID: 6777175742123180905}
+  m_Father: {fileID: 6781302225997463188}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6780256044927371219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6777131879901478891}
+  m_Layer: 0
+  m_Name: ikHandle1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6777131879901478891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780256044927371219}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.7470893e-32, y: 1.4449165, z: -0.0011588049}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children: []
+  m_Father: {fileID: 6781302225997463188}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6780291056440989959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6776887283923383609}
+  m_Layer: 0
+  m_Name: joint5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6776887283923383609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780291056440989959}
+  m_LocalRotation: {x: 0.97555345, y: -0.2197623, z: -8.395085e-17, w: 4.3855217e-17}
+  m_LocalPosition: {x: -39.88731, y: 6.217249e-15, z: 1.8906614e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6776997744384339861}
+  m_Father: {fileID: 6777190166921887335}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6780618852640642695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6776958071919439633}
+  m_Layer: 0
+  m_Name: joint8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6776958071919439633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780618852640642695}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.623763, y: 22.696865, z: -5.4510927e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6777175742123180905}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6780636017641961631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6779034797615024729}
+  m_Layer: 0
+  m_Name: joint7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6779034797615024729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780636017641961631}
+  m_LocalRotation: {x: -0.4604191, y: 0.5366697, z: 0.4604191, w: 0.5366697}
+  m_LocalPosition: {x: -90.106224, y: -3.0769684, z: -19.539095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6776997744384339861}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6780672506856126831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6777190166921887335}
+  m_Layer: 0
+  m_Name: joint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6777190166921887335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780672506856126831}
+  m_LocalRotation: {x: 0.9987344, y: -0.05029525, z: -3.3858054e-17, w: 5.9604875e-17}
+  m_LocalPosition: {x: -24.4526, y: 7.4154075e-15, z: -1.4351061e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6776887283923383609}
+  m_Father: {fileID: 6777122584107779897}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6780802915229713055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6777122584107779897}
+  m_Layer: 0
+  m_Name: joint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6777122584107779897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780802915229713055}
+  m_LocalRotation: {x: 6.278474e-18, y: 4.8427448e-17, z: -0.12672356, w: 0.9919381}
+  m_LocalPosition: {x: -52.6001, y: 2.1316282e-14, z: -4.434713e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6777190166921887335}
+  m_Father: {fileID: 6777175742123180905}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6780826810931425093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6777175742123180905}
+  m_Layer: 0
+  m_Name: joint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6777175742123180905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780826810931425093}
+  m_LocalRotation: {x: 1.5102535e-17, y: 4.040067e-17, z: -0.17918433, w: 0.9838155}
+  m_LocalPosition: {x: -33.365616, y: 0, z: -3.7043275e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6777122584107779897}
+  - {fileID: 6776958071919439633}
+  m_Father: {fileID: 6777191180602326189}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6780855349776718969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6776878577777488811}
+  - component: {fileID: 6914663799005407011}
+  m_Layer: 0
+  m_Name: fungi_L2:Group26989
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6776878577777488811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780855349776718969}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 0.080789015, y: 0.080789015, z: 0.080789015}
+  m_Children: []
+  m_Father: {fileID: 6781302225997463188}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &6914663799005407011
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780855349776718969}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f0e1c20a7507de64f9ff33524b8b0400, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: d6e67d953c2abe44d85d00e6ce4dccdc, type: 3}
+  m_Bones:
+  - {fileID: 6777191180602326189}
+  - {fileID: 6777175742123180905}
+  - {fileID: 6777122584107779897}
+  - {fileID: 6777190166921887335}
+  - {fileID: 6776887283923383609}
+  - {fileID: 6776997744384339861}
+  - {fileID: 6779034797615024729}
+  - {fileID: 6776958071919439633}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 6777191180602326189}
+  m_AABB:
+    m_Center: {x: -138.74814, y: 33.541275, z: 16.482449}
+    m_Extent: {x: 206.14392, y: 203.60422, z: 139.49692}
+  m_DirtyAABB: 0
+--- !u!1 &6780858616306551911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6776997744384339861}
+  m_Layer: 0
+  m_Name: joint6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6776997744384339861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780858616306551911}
+  m_LocalRotation: {x: -6.047512e-20, y: 0.0000000014121739, z: -0.09476939, w: 0.99549925}
+  m_LocalPosition: {x: -48.94133, y: 1.7763568e-15, z: -7.073081e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6779034797615024729}
+  m_Father: {fileID: 6776887283923383609}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6781302225997463187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6781302225997463188}
+  - component: {fileID: 6867660375025548077}
+  m_Layer: 0
+  m_Name: PF_fungi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6781302225997463188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6781302225997463187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.75, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_Children:
+  - {fileID: 6776878577777488811}
+  - {fileID: 6777131879901478891}
+  - {fileID: 6777191180602326189}
+  m_Father: {fileID: 6781302226338818507}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &6867660375025548077
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6781302225997463187}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: d6e67d953c2abe44d85d00e6ce4dccdc, type: 3}
+  m_Controller: {fileID: 9100000, guid: 20ea7626680abd74a8a9750ddcf69979, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &6781302226338818508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6781302226338818507}
+  - component: {fileID: 6781302226338818518}
+  - component: {fileID: 6781302226338818519}
+  - component: {fileID: 9133996855450365686}
+  - component: {fileID: 6752639696673897847}
+  - component: {fileID: 6781302226338818505}
+  - component: {fileID: 6781302226338818506}
+  m_Layer: 0
+  m_Name: Fungi the Fun Guy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6781302226338818507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6781302226338818508}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 205.75, y: 0, z: 93.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6781302225997463188}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!136 &6781302226338818518
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6781302226338818508}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.59
+  m_Height: 2.7934937
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5032531, z: 0}
+--- !u!54 &6781302226338818519
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6781302226338818508}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!114 &9133996855450365686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6781302226338818508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ddbea800a678d4680f4cb2ddc049dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tip_E_Height: 0.7
+  tip_E_Width: 1.2
+  tip_RightClick_Height: 0.7
+  tip_RightClick_Width: 1.2
+--- !u!114 &6752639696673897847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6781302226338818508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3f4b0439591a2f48a58732c4020e4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkOrder:
+  - character: {fileID: 6781302226338818508}
+    talkingToCharacter: {fileID: 0}
+    sentences:
+    - Welcome!
+    - "I\u2019d offer you to enter my house but... "
+    - "I\u2019m afraid there isn\u2019t that Mush-room!"
+    - Ho ho ho ho!
+    id: 0
+    dialogueboxHeight: 1.5
+  - character: {fileID: 0}
+    talkingToCharacter: {fileID: 6781302226338818507}
+    sentences:
+    - Do you know where my hat is?
+    id: 1
+    dialogueboxHeight: 0.6
+  - character: {fileID: 6781302226338818508}
+    talkingToCharacter: {fileID: 0}
+    sentences:
+    - I do.
+    - My Mycelium runs deep within the earth and all throughout these woods.
+    - I see and feel everything that happens.
+    id: 2
+    dialogueboxHeight: 1.5
+  - character: {fileID: 0}
+    talkingToCharacter: {fileID: 6781302226338818507}
+    sentences:
+    - Then where is---
+    id: 3
+    dialogueboxHeight: 0.6
+  - character: {fileID: 6781302226338818508}
+    talkingToCharacter: {fileID: 0}
+    sentences:
+    - BUT FIRST!
+    - YOU NEED TO ANSWER MY RIDDLES THREE!
+    id: 4
+    dialogueboxHeight: 1.5
+  - character: {fileID: 0}
+    talkingToCharacter: {fileID: 6781302226338818507}
+    sentences:
+    - HMM!
+    id: 5
+    dialogueboxHeight: 0.6
+  - character: {fileID: 0}
+    talkingToCharacter: {fileID: 6781302226338818507}
+    sentences:
+    - We accept your challenge, Fungi!
+    id: 6
+    dialogueboxHeight: 1.5
+  - character: {fileID: 6781302226338818508}
+    talkingToCharacter: {fileID: 0}
+    sentences:
+    - Let's start with an easy one.
+    id: 7
+    dialogueboxHeight: 1.5
+  freezePlayerMovement: 1
+  continueWithApproachLine: 1
+  blockade: {fileID: 0}
+--- !u!114 &6781302226338818505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6781302226338818508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c1f7702bc75094e88593cbbbe7bc49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveType: 0
+  wantedItems:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  approachLine:
+  - Trees have many in the summer...
+  - but in winter they might have none.
+  - And there's a certain phrase that says...
+  - You can turn over a new one.
+  receiveLine:
+  - Yes, this is the correct item!
+  rejectLine:
+  - No, this is not the item I was talking about, try again!
+  completedLine:
+  - Well done!
+  - "I saw Bella\xB4s hat flying past me into those raspberry bushes over there!"
+  - Have a nice day!
+  TESTMODE: 0
+  mute: 0
+  inOrder: 1
+  hasTalked: 0
+  freezeMovementDuringTalk: 1
+  ChatBubbleDistanceAboveCharacter: 1.5
+  cutScene_Riddles: {fileID: 0}
+--- !u!114 &6781302226338818506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6781302226338818508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426cc3e7ad76cd94ab137d5680aca05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 0}
+  riddle1:
+  - Trees have many in the summer...
+  - But in the winter they might have none.
+  - And there's a certain phrase that says...
+  - You can turn over a new one.
+  riddle2:
+  - Its color is a type of purple, and it's a type of flower...
+  - it's sometimes the scent of products that you might use in the shower.
+  riddle3:
+  - It is something that is yellow and sounds like something in the sky...
+  - Its seeds can be eaten, and can grow to be ten feet high!
+  playerM: {fileID: 0}
+  bushToDestroy: {fileID: 0}
+  destroyDelay: 6
+  followPlayer: {fileID: 0}
+  waitPosition: {fileID: 0}

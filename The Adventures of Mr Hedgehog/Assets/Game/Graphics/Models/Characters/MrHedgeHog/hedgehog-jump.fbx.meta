@@ -1,0 +1,252 @@
+fileFormatVersion: 2
+guid: 4ff034ffe06a6254ca94dbeae25b2901
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: arm_controller_L
+    100002: arm_controller_R
+    100004: arm_ik_L
+    100006: arm_ik_R
+    100008: arm_L
+    100010: arm_R
+    100012: ear_controller_L
+    100014: ear_controller_R
+    100016: ear_ik_L
+    100018: ear_L
+    100020: ear_R
+    100022: ear_tip_L
+    100024: ear_tip_R
+    100026: finger_L
+    100028: finger_R
+    100030: finger_tip_L
+    100032: finger_tip_R
+    100034: foot_controller_L
+    100036: foot_controller_R
+    100038: foot_ik_L
+    100040: foot_ik_R
+    100042: foot_L
+    100044: foot_R
+    100046: group1
+    100048: group2
+    100050: group3
+    100052: group4
+    100054: group5
+    100056: group6
+    100058: group7
+    100060: group8
+    100062: group9
+    100064: hand_L
+    100066: hand_R
+    100068: head
+    100070: //RootNode
+    100072: hedgehog_L2:Group3
+    100074: hedgehog_skeleton
+    100076: ikHandle4
+    100078: leg_controller_L
+    100080: leg_controller_R
+    100082: leg_ik_L
+    100084: leg_ik_R
+    100086: leg_L
+    100088: leg_R
+    100090: neck
+    100092: nose
+    100094: nose_bridge
+    100096: nose_controller
+    100098: nose_ik
+    100100: nose_tip
+    100102: shin_L
+    100104: shin_R
+    100106: thumb_L
+    100108: thumb_R
+    100110: thumb_tip_L
+    100112: thumb_tip_R
+    100114: toe_tip_L
+    100116: toe_tip_R
+    100118: toes_L
+    100120: toes_R
+    100122: torso
+    100124: wrist_L
+    100126: wrist_R
+    400000: arm_controller_L
+    400002: arm_controller_R
+    400004: arm_ik_L
+    400006: arm_ik_R
+    400008: arm_L
+    400010: arm_R
+    400012: ear_controller_L
+    400014: ear_controller_R
+    400016: ear_ik_L
+    400018: ear_L
+    400020: ear_R
+    400022: ear_tip_L
+    400024: ear_tip_R
+    400026: finger_L
+    400028: finger_R
+    400030: finger_tip_L
+    400032: finger_tip_R
+    400034: foot_controller_L
+    400036: foot_controller_R
+    400038: foot_ik_L
+    400040: foot_ik_R
+    400042: foot_L
+    400044: foot_R
+    400046: group1
+    400048: group2
+    400050: group3
+    400052: group4
+    400054: group5
+    400056: group6
+    400058: group7
+    400060: group8
+    400062: group9
+    400064: hand_L
+    400066: hand_R
+    400068: head
+    400070: //RootNode
+    400072: hedgehog_L2:Group3
+    400074: hedgehog_skeleton
+    400076: ikHandle4
+    400078: leg_controller_L
+    400080: leg_controller_R
+    400082: leg_ik_L
+    400084: leg_ik_R
+    400086: leg_L
+    400088: leg_R
+    400090: neck
+    400092: nose
+    400094: nose_bridge
+    400096: nose_controller
+    400098: nose_ik
+    400100: nose_tip
+    400102: shin_L
+    400104: shin_R
+    400106: thumb_L
+    400108: thumb_R
+    400110: thumb_tip_L
+    400112: thumb_tip_R
+    400114: toe_tip_L
+    400116: toe_tip_R
+    400118: toes_L
+    400120: toes_R
+    400122: torso
+    400124: wrist_L
+    400126: wrist_R
+    2100000: lambert3
+    4300000: hedgehog_L2:Group3
+    7400000: jump
+    9500000: //RootNode
+    13700000: hedgehog_L2:Group3
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: jump
+      takeName: Take 001
+      firstFrame: 3
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
