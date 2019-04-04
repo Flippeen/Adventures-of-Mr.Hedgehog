@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public abstract class ReceiveTypeSuperClass : MonoBehaviour
@@ -23,6 +24,7 @@ public abstract class ReceiveTypeSuperClass : MonoBehaviour
 	protected virtual void Start(){}
 
     public bool GetHasTurnedIn(){ return hasTurnedIn; }
+    [SerializeField] private bool endLevelOnCompletion = false;
 
     public bool ReceiveItem(GameObject item)
     {
@@ -49,14 +51,23 @@ public abstract class ReceiveTypeSuperClass : MonoBehaviour
                 hasTurnedIn = true;
                 SayStandardLine(Line.COMPLETEDLINE);
                 CompletedAction();
+                if (endLevelOnCompletion)
+                    StartCoroutine("WaitWithEnding");
+
             }
-            return HandleItem(item);            
+            return HandleItem(item);         
         }
         else
         {
             SayStandardLine(Line.REJECTLINE);
             return false;
         }        
+    }
+
+    IEnumerator WaitWithEnding()
+    {
+        yield return new WaitUntil(() => !DialogueManager.Instance.GetTalking());
+        WinCondition.Instance.EndingOfLevel();
     }
 
     protected virtual bool HandleItem(GameObject item){ return true; }

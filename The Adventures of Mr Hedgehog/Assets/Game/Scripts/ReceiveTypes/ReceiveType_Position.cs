@@ -6,8 +6,6 @@ public class ReceiveType_Position : ReceiveTypeSuperClass
 {
     [SerializeField]
     private List<GameObject> targetPosition = new List<GameObject>();
-	[SerializeField]
-	private GameObject parentObj;
 
     [SerializeField]
     private int groundLayer = 10;

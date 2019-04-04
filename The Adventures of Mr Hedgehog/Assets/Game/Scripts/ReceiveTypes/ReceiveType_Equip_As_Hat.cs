@@ -3,8 +3,7 @@ using System.Collections;
 
 public class ReceiveType_Equip_As_Hat : ReceiveTypeSuperClass
 {
-    [SerializeField] private GameObject hatPosition;
-    [SerializeField] private bool endGameOnReceive = false;
+    [SerializeField] private GameObject hatPosition;    
 
     protected override void Start()
     {
@@ -26,15 +25,6 @@ public class ReceiveType_Equip_As_Hat : ReceiveTypeSuperClass
 
         if (wantedItems.Count == 0)
             UpdateApproachLine(completedLine);
-
-        if (endGameOnReceive)
-            StartCoroutine("WaitWithEnding");
         return true;
-    }
-
-    IEnumerator WaitWithEnding()
-    {
-        yield return new WaitUntil(() => DialogueManager.Instance.GetTalking() == false);
-        WinCondition.Instance.EndingOfLevel();
-    }
+    }    
 }
