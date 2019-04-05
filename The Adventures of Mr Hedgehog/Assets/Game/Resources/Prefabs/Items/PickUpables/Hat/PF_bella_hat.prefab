@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 1644340579755592211}
   - component: {fileID: 4315534911968234305}
   - component: {fileID: 4315534911968234304}
+  - component: {fileID: 5666605234330182239}
   m_Layer: 12
   m_Name: PF_bella_hat
   m_TagString: PickUpable
@@ -213,3 +214,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6368149, y: 0.2617238, z: 0.60564756}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5666605234330182239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4315534911968234303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b68bb93bd20be84cb599172b75c1db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipPosition: {x: 0, y: 1.25, z: 0}
+  itemPosition: {x: 0, y: 0.35, z: 0.45}
+  placeInHand: 0

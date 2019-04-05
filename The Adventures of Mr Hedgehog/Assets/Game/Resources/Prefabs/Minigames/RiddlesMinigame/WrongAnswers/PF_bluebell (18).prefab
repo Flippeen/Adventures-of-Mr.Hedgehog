@@ -134,7 +134,7 @@ Transform:
   m_GameObject: {fileID: 6389705023933245384}
   m_LocalRotation: {x: 0.04294869, y: -0.15204035, z: -0.015387303, w: 0.98732084}
   m_LocalPosition: {x: 201.27, y: -1.05, z: 86.27}
-  m_LocalScale: {x: 11, y: 11, z: 11}
+  m_LocalScale: {x: 9, y: 9, z: 9}
   m_Children:
   - {fileID: 6110384808808382717}
   m_Father: {fileID: 0}
@@ -241,5 +241,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipPosition: {x: 0, y: 3, z: 0}
-  itemPosition: {x: 0, y: 0.2, z: 0.5}
-  placeInHand: 0
+  itemPosition: {x: -60.377, y: -143.25, z: -135.29}
+  itemRotation: {x: 0.167, y: -64.501, z: -16.216}
+  placeInHand: 1

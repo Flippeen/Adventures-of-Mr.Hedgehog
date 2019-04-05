@@ -195,8 +195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipPosition: {x: 0, y: 1, z: 0}
-  itemPosition: {x: 0, y: 0.5, z: 0.5}
-  placeInHand: 0
+  itemPosition: {x: 47.94, y: 411.97, z: -33.94}
+  itemRotation: {x: 4.481, y: 52.009, z: 0}
+  placeInHand: 1
 --- !u!1 &5742980975043460326
 GameObject:
   m_ObjectHideFlags: 0

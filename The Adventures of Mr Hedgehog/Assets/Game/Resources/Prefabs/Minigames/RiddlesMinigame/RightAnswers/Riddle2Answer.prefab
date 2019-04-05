@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3055450090722089416}
   - component: {fileID: 3055450090722089417}
   - component: {fileID: 3055450090722089418}
-  - component: {fileID: 3055450090722089421}
   m_Layer: 11
   m_Name: Flower
   m_TagString: Untagged
@@ -78,21 +77,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &3055450090722089421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3055450090722089419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b68bb93bd20be84cb599172b75c1db0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tipPosition: {x: 0, y: 0, z: 0}
-  itemPosition: {x: 0, y: 0, z: 0}
-  placeInHand: 0
 --- !u!1 &3325792415439275155
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,7 +155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipPosition: {x: 0, y: 2, z: 0}
-  itemPosition: {x: 0.21, y: 0.75, z: 0.185}
+  itemPosition: {x: 13, y: 622, z: -44}
+  itemRotation: {x: 0, y: 0, z: 0}
   placeInHand: 1
 --- !u!1 &7108783326972915218
 GameObject:

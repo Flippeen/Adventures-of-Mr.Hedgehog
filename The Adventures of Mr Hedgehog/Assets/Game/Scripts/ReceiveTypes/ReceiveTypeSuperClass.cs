@@ -4,10 +4,6 @@ using UnityEngine;
 
 public abstract class ReceiveTypeSuperClass : MonoBehaviour
 {
-    protected enum ReceiveType { DESTROY, POSITION, EQUIP_AS_HAT }
-    [SerializeField]
-    protected ReceiveType receiveType = ReceiveType.EQUIP_AS_HAT;
-
     public enum Line { APPROACHLINE, RECEIVELINE, REJECTLINE, COMPLETEDLINE }
 
     [SerializeField]
@@ -41,8 +37,12 @@ public abstract class ReceiveTypeSuperClass : MonoBehaviour
 			
 			wantedItems.Remove(item);            
             SayStandardLine(Line.RECEIVELINE);
-              
-            Destroy(item.GetComponent<Rigidbody>());
+
+			Rigidbody rb = item.GetComponent<Rigidbody>();
+			rb.useGravity = false;
+			rb.isKinematic = true;
+			rb.constraints = RigidbodyConstraints.FreezeAll;
+
             item.tag = "Untagged";
 			PickUp.Instance.RemoveGivenItem(item);
 

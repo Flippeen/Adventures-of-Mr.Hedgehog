@@ -101,11 +101,11 @@ public sealed class PickUp : MonoBehaviour
             Rigidbody rb = objectToPickUp.GetComponent<Rigidbody>();
             rb.constraints = RigidbodyConstraints.FreezeAll;
 
-			currentlyHoldingObject.GetComponent<Collider>().enabled = false;
+			foreach (var item in currentlyHoldingObject.GetComponents<Collider>())
+				item.enabled = false;			
 
 			Transform t = objectToPickUp.transform;
 			ItemAndTip_Positioning pos = t.gameObject.GetComponent<ItemAndTip_Positioning>() ?? null;
-			//t.SetParent(pos != null ? rightHand : player.transform);	Objektet fryser i luften med denna?
 			t.SetParent(player.transform);
             StartCoroutine(LerpObject(t, pos));
 
@@ -115,35 +115,46 @@ public sealed class PickUp : MonoBehaviour
         return false;      
     }
 
-    [SerializeField] private float pickUpSpeed = 1.5f;
+    [SerializeField] private float pickUpSpeed = 0.25f;
     IEnumerator LerpObject(Transform t, ItemAndTip_Positioning pos)
     {
         pickUpAndDropReady = false;
         bool lerping = true;
 
-        Vector3 startPosition = t.localPosition;
+		Vector3 endPosition;
+		Vector3 endRotation = Quaternion.identity.eulerAngles;
+		if (pos != null)
+		{
+			endPosition = pos.GetItemPosition();
+			if (pos.GetItemRotation() != Vector3.zero)
+				endRotation = pos.GetItemRotation();
+			if (pos.GetPlaceObjectInHand())
+				t.SetParent(rightHand);
+		}
+		else
+			endPosition = new Vector3(0, defaultItemDistanceFromPlayer_Y, defaultItemDistanceFromPlayer_Z);			
 
-		Vector3 endPosition = (pos != null) ? pos.GetItemPosition() : new Vector3(0, defaultItemDistanceFromPlayer_Y, defaultItemDistanceFromPlayer_Z);		
-        Quaternion startRotation = t.localRotation;
+		Vector3 startPosition = t.localPosition;
+		Vector3 startRotation = t.localRotation.eulerAngles;
 
-        float journeyLength = Vector3.Distance(startPosition, endPosition);
-        float startTime = Time.time;
-        float distCovered;
-        float fracJourney;        
-
-        while (lerping)
+		float time = 0.0f;
+		float fracJourney;
+		while (lerping)
         {
-            yield return new WaitForFixedUpdate();
-            distCovered = (Time.time - startTime) * pickUpSpeed;
-            fracJourney = distCovered / journeyLength;
-            t.localPosition = Vector3.Lerp(startPosition, endPosition, fracJourney);
-            t.localRotation = Quaternion.Lerp(startRotation, Quaternion.identity, fracJourney);
+			yield return new WaitForEndOfFrame();
+			fracJourney = Mathf.Clamp01(time / pickUpSpeed);
+			t.localPosition = Vector3.Lerp(startPosition, endPosition, fracJourney);
+			//t.localRotation = Quaternion.Lerp(startRotation, new Quaternion(endRotation.x, endRotation.y, endRotation.z, 0), fracJourney);
+			//t.localEulerAngles = Vector3.Lerp(startRotation, endRotation, fracJourney);
+			t.localEulerAngles = new Vector3(
+				Mathf.LerpAngle(startRotation.x, endRotation.x, fracJourney),
+				Mathf.LerpAngle(startRotation.y, endRotation.y, fracJourney),
+				Mathf.LerpAngle(startRotation.z, endRotation.z, fracJourney));
 
-            if (fracJourney > 0.99f)
+			time += Time.deltaTime;
+			if (fracJourney > 0.99f)
                 lerping = false;            
-        }
-		if (pos != null && pos.GetPlaceInHand())
-			t.SetParent(rightHand);
+        }					
         pickUpAndDropReady = true;
     }
 
@@ -160,6 +171,7 @@ public sealed class PickUp : MonoBehaviour
         Rigidbody rb = currentlyHoldingObject.GetComponent<Rigidbody>();
         rb.constraints = RigidbodyConstraints.None;
         rb.isKinematic = false;
+		rb.useGravity = true;
 
         if (withForce)
             rb.AddRelativeForce(Vector3.forward * dropForce, ForceMode.Impulse);
@@ -171,7 +183,10 @@ public sealed class PickUp : MonoBehaviour
 
         ToggleGlitterEffect(currentlyHoldingObject.transform, true);
         currentlyHoldingObject.tag = "PickUpable";
-		currentlyHoldingObject.GetComponent<Collider>().enabled = true;
+
+		foreach (var item in currentlyHoldingObject.GetComponents<Collider>())
+			item.enabled = true;
+
 		returnValue = currentlyHoldingObject;
         currentlyHoldingObject = null;        
         return returnValue;

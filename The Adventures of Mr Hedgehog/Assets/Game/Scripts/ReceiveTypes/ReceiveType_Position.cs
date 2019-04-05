@@ -4,11 +4,11 @@ using System.Linq;
 
 public class ReceiveType_Position : ReceiveTypeSuperClass
 {
-    [SerializeField]
-    private List<GameObject> targetPosition = new List<GameObject>();
+    [SerializeField] private List<GameObject> targetPosition = new List<GameObject>();
 
-    [SerializeField]
-    private int groundLayer = 10;
+    [SerializeField] private int groundLayer = 10;
+
+	[SerializeField] private bool placedItemsAreReuseable = false;
 
     protected override void Start()
     {
@@ -25,13 +25,22 @@ public class ReceiveType_Position : ReceiveTypeSuperClass
         {
             Debug.LogError("ReceiveType is set to POSITION but targetPosition is not defined!");
             return false;
-        }
-		item.GetComponent<Collider>().enabled = true;
+        }		
+
         Transform t = item.transform;
         t.gameObject.layer = groundLayer;
         t.position = targetPosition[0].transform.position;
         t.rotation = targetPosition[0].transform.rotation;
-        targetPosition.RemoveAt(0);
+
+		item.GetComponent<Collider>().enabled = true;
+
+		if (placedItemsAreReuseable)
+		{
+			wantedItems.Add(item);
+			item.tag = "PickUpable";
+		}			
+		else
+			targetPosition.RemoveAt(0);
         return true;
     }
 }

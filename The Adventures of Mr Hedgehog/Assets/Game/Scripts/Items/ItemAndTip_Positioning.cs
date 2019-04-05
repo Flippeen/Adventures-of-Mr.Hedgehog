@@ -10,7 +10,10 @@ public class ItemAndTip_Positioning : MonoBehaviour
 	[SerializeField] private Vector3 itemPosition;
 	public Vector3 GetItemPosition() { return itemPosition; }
 
+	[SerializeField] private Vector3 itemRotation;
+	public Vector3 GetItemRotation() { return itemRotation; }
+
 	[SerializeField] private bool placeInHand = false;
-	public bool GetPlaceInHand() { return placeInHand; }
+	public bool GetPlaceObjectInHand() { return placeInHand; }
 
 }
