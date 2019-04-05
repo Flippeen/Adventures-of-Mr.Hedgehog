@@ -26,9 +26,11 @@ public class BorisController : MonoBehaviour
         aS.Play();
         while (aS.isPlaying)
         {
-            if (Physics.Raycast(transform.position, playerPos.position - transform.position, out hitInfo, 100) && !canSeePlayer)
+            if (Physics.Raycast(transform.position, playerPos.position - transform.position, out hitInfo, 100) &&
+                hitInfo.transform != null && !canSeePlayer)
             {
                 canSeePlayer = true;
+                Debug.Log("htihthrth");
                 StartCoroutine(BlowHimAway(hitInfo));
             }
             else
@@ -45,7 +47,7 @@ public class BorisController : MonoBehaviour
     IEnumerator BlowHimAway(RaycastHit hit)
     {
         yield return new WaitForSeconds(0.3f);
-        hit.transform.GetComponent<PlayerMovement>().FreezePlayerMovement(true, transform);
+        //hit.transform.gameObject.GetComponent<PlayerMovement>().FreezePlayerMovement(true, transform);
         rb.velocity = Vector3.zero;
         while (Vector3.Distance(playerPos.position, transform.position) < 100)
         {
@@ -59,7 +61,7 @@ public class BorisController : MonoBehaviour
         }
         if(Vector3.Distance(playerPos.position, transform.position) >= 100)
         {
-            hit.transform.GetComponent<PlayerMovement>().FreezePlayerMovement(false, transform);
+            //hit.transform.GetComponent<PlayerMovement>().FreezePlayerMovement(false, transform);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StoneRolling : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class StoneRolling : MonoBehaviour
     {
         if(c.gameObject.tag == "RiverWalls")
             rb.AddForce((c.GetContact(0).normal + c.transform.forward).normalized * 500 * Time.deltaTime, ForceMode.VelocityChange);
+        if(c.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
     [SerializeField] float gravityDown;
     [SerializeField] LayerMask ground;
