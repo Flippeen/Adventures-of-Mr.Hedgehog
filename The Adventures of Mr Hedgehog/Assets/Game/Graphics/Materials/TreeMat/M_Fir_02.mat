@@ -29,7 +29,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: 3f5a56e401a42104c9bbb78bfcf6505e, type: 3}
+        m_Texture: {fileID: 2800000, guid: c8f6d7dc2c24978468bea13e2eea9784, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -89,7 +89,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3f5a56e401a42104c9bbb78bfcf6505e, type: 3}
+        m_Texture: {fileID: 2800000, guid: c8f6d7dc2c24978468bea13e2eea9784, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -212,7 +212,7 @@ Material:
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 0
     - _MaterialID: 1
-    - _Metallic: 1
+    - _Metallic: 0
     - _Mode: 0
     - _NormalMapSpace: 0
     - _NormalScale: 1
@@ -230,7 +230,7 @@ Material:
     - _ShiverDirectionality: 0.5
     - _ShiverDrag: 0.2
     - _Smoothness: 0.5
-    - _SmoothnessRemapMax: 1
+    - _SmoothnessRemapMax: 0.1047619
     - _SmoothnessRemapMin: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularAAScreenSpaceVariance: 0.1
