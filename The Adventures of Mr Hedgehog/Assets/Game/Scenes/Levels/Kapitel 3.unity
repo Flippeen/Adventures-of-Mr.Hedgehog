@@ -73609,6 +73609,7 @@ GameObject:
   - component: {fileID: 1619845865}
   - component: {fileID: 1619845866}
   - component: {fileID: 1619845867}
+  - component: {fileID: 1619845868}
   m_Layer: 0
   m_Name: Bird box tree
   m_TagString: Untagged
@@ -73657,8 +73658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wantedItems:
   - {fileID: 652541552}
-  approachLine:
-  - Who's walking there? Come closer, my eyes aren't great
+  approachLine: []
   receiveLine:
   - That is my egg! Quick! Gimme!
   rejectLine:
@@ -73675,6 +73675,35 @@ MonoBehaviour:
   - {fileID: 1217012041}
   groundLayer: 1
   placedItemsAreReuseable: 0
+--- !u!114 &1619845868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619845864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3f4b0439591a2f48a58732c4020e4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkOrder:
+  - character: {fileID: 0}
+    talkingToCharacter: {fileID: 0}
+    sentences:
+    - "Who goes there? You\u2019ll have to come closer, my eyes aren\u2019t that great"
+    - "My name is Mr Hedgehog. I\u2019m looking for Snek Snoks eggs, you wouldn\u2019t
+      happen to have seen one of them?"
+    - No, all I have is my egg here
+    - Are you sure that that is your egg? It looks remarkably similar to her other
+      eggs. It is the same shape and the same shade of white
+    - "White? What are you talking about? It\u2019s obviously green"
+    - (Maybe I can find her egg and return it to her to get Snek Snoks egg back)
+    id: 0
+    dialogueboxHeight: 0
+  freezePlayerMovement: 1
+  continueWithApproachLine: 1
+  blockade: {fileID: 0}
 --- !u!4 &1620311155 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9121675606754157302, guid: e9ff1389f1ebe354b93743b52602448b,
@@ -78086,17 +78115,17 @@ PrefabInstance:
     - target: {fileID: 8400984035423647201, guid: 4219548d0ce00034f8994252e2e74c5d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.027018331
+      value: -0.027018335
       objectReference: {fileID: 0}
     - target: {fileID: 8400984035423647201, guid: 4219548d0ce00034f8994252e2e74c5d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.07536769
+      value: -0.07536775
       objectReference: {fileID: 0}
     - target: {fileID: 8400984035423647201, guid: 4219548d0ce00034f8994252e2e74c5d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0020435993
+      value: -0.0020436002
       objectReference: {fileID: 0}
     - target: {fileID: 8400984035423647201, guid: 4219548d0ce00034f8994252e2e74c5d,
         type: 3}
@@ -78106,17 +78135,17 @@ PrefabInstance:
     - target: {fileID: 8182566750613518617, guid: 4219548d0ce00034f8994252e2e74c5d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.027018331
+      value: -0.027018335
       objectReference: {fileID: 0}
     - target: {fileID: 8182566750613518617, guid: 4219548d0ce00034f8994252e2e74c5d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.07536769
+      value: -0.07536775
       objectReference: {fileID: 0}
     - target: {fileID: 8182566750613518617, guid: 4219548d0ce00034f8994252e2e74c5d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0020435993
+      value: -0.0020436002
       objectReference: {fileID: 0}
     - target: {fileID: 8182566750613518617, guid: 4219548d0ce00034f8994252e2e74c5d,
         type: 3}
