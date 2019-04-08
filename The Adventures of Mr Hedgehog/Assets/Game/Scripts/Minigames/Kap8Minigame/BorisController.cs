@@ -17,8 +17,11 @@ public class BorisController : MonoBehaviour
     [SerializeField] AudioClip[] bearSounds;
     bool canSeePlayer;
     bool blowPlaying;
+    public bool dontRoar;
     IEnumerator CheckForPlayer()
     {
+        if (dontRoar)
+            yield break;
         aS.clip = bearSounds[0];
         aS.Play();
         yield return new WaitForSeconds(bearSounds[0].length);
@@ -67,7 +70,7 @@ public class BorisController : MonoBehaviour
         }
         else
         {
-            yield return new WaitWhile(IsPlayer());
+            yield return new WaitWhile(() => hitInfo.transform.tag != "Player");
             blowPlaying = false;
         }
     }
