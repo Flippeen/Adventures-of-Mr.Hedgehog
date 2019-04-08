@@ -18,6 +18,7 @@ public class BorisController : MonoBehaviour
     bool canSeePlayer;
     bool blowPlaying;
     public bool dontRoar;
+    [SerializeField] LayerMask collideWith;
     IEnumerator CheckForPlayer()
     {
         if (dontRoar)
@@ -30,7 +31,7 @@ public class BorisController : MonoBehaviour
         aS.Play();
         while (aS.isPlaying)
         {
-            if (Physics.Raycast(transform.position, playerPos.position - transform.position, out hitInfo, 100))
+            if (Physics.Raycast(transform.position, playerPos.position - transform.position, out hitInfo, 100, collideWith))
             {
                 if (!blowPlaying)
                 {
