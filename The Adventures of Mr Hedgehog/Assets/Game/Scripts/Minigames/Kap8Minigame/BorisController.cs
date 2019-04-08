@@ -16,6 +16,7 @@ public class BorisController : MonoBehaviour
     RaycastHit hitInfo;
     [SerializeField] AudioClip[] bearSounds;
     bool canSeePlayer;
+    bool blowPlaying;
     IEnumerator CheckForPlayer()
     {
         aS.clip = bearSounds[0];
@@ -26,16 +27,13 @@ public class BorisController : MonoBehaviour
         aS.Play();
         while (aS.isPlaying)
         {
-            if (Physics.Raycast(transform.position, playerPos.position - transform.position, out hitInfo, 100) &&
-                hitInfo.transform != null && !canSeePlayer)
+            if (Physics.Raycast(transform.position, playerPos.position - transform.position, out hitInfo, 100))
             {
-                canSeePlayer = true;
-                Debug.Log("htihthrth");
-                StartCoroutine(BlowHimAway(hitInfo));
-            }
-            else
-            {
-                canSeePlayer = false;
+                if (!blowPlaying)
+                {
+                    blowPlaying = true;
+                    StartCoroutine(BlowHimAway(hitInfo));
+                }
             }
             yield return new WaitForEndOfFrame();
         }
@@ -46,22 +44,38 @@ public class BorisController : MonoBehaviour
     }
     IEnumerator BlowHimAway(RaycastHit hit)
     {
+        PlayerMovement player = playerPos.GetComponent<PlayerMovement>();
         yield return new WaitForSeconds(0.3f);
-        //hit.transform.gameObject.GetComponent<PlayerMovement>().FreezePlayerMovement(true, transform);
-        rb.velocity = Vector3.zero;
-        while (Vector3.Distance(playerPos.position, transform.position) < 100)
+        FindObjectOfType<StoneSpawner>().SpawnStones();
+        if (hitInfo.transform.tag == "Player")
         {
-            if (!aS.isPlaying)
+            player.FreezePlayerMovement(true, null);
+            rb.velocity = Vector3.zero;
+            while (Vector3.Distance(playerPos.position, transform.position) < 100)
             {
-                aS.clip = bearSounds[1];
-                aS.Play();
+                if (!aS.isPlaying)
+                {
+                    aS.Play();
+                }
+                rb.velocity += (playerPos.position - transform.position).normalized * 100 * Time.deltaTime;
+                yield return new WaitForSeconds(0.1f);
             }
-            rb.velocity += (playerPos.position - transform.position).normalized * 100 * Time.deltaTime;
-            yield return new WaitForSeconds(0.1f);
+            if(Vector3.Distance(playerPos.position, transform.position) >= 100)
+            {
+                player.FreezePlayerMovement(false, null);
+            }
         }
-        if(Vector3.Distance(playerPos.position, transform.position) >= 100)
+        else
         {
-            //hit.transform.GetComponent<PlayerMovement>().FreezePlayerMovement(false, transform);
+            yield return new WaitWhile(IsPlayer());
+            blowPlaying = false;
         }
+    }
+    bool IsPlayer()
+    {
+        if (hitInfo.transform.tag == "Player")
+            return true;
+        else
+            return false;
     }
 }

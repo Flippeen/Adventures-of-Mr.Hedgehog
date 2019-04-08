@@ -31,8 +31,8 @@ TagManager:
   - Slippery
   - Item
   - Post Processing
-  - 
-  - 
+  - IgnorePlayer
+  - Player
   - 
   - 
   - 
