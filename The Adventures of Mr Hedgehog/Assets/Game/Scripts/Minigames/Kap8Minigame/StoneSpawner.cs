@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class StoneSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject rollingStone;
-    public bool dontSpawnStones;
-    public void SpawnStones()
+    void Start()
     {
-        if (dontSpawnStones)
-            return;
+        StartCoroutine(SpawnStones());
+    }
+
+    [SerializeField] GameObject rollingStone;
+    IEnumerator SpawnStones()
+    {
         GameObject newStone = Instantiate(rollingStone, transform.position, transform.rotation);
         Destroy(newStone, 10);
+        yield return new WaitForSeconds(15);
+        StartCoroutine(SpawnStones());
     }
 }

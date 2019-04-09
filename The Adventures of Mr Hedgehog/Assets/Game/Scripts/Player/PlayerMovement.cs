@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (freezePlayer)
         {
-            rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
+            //rb.velocity = new Vector3(0, rb.velocity.y, 0);
             return;
         }
 
