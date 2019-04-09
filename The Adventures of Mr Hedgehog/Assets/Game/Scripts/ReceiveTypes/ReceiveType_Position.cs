@@ -6,7 +6,7 @@ public class ReceiveType_Position : ReceiveTypeSuperClass
 {
     [SerializeField] private List<GameObject> targetPosition = new List<GameObject>();
 
-    [SerializeField] private int groundLayer = 10;
+    [SerializeField] private int groundLayer = 10, itemLayer = 12;
 
 	[SerializeField] private bool placedItemsAreReuseable = false;
 
@@ -36,8 +36,10 @@ public class ReceiveType_Position : ReceiveTypeSuperClass
 
 		if (placedItemsAreReuseable)
 		{
-			wantedItems.Add(item);
-			item.tag = "PickUpable";
+            item.tag = "PickUpable";
+            t.gameObject.layer = itemLayer;
+            wantedItems.Add(item);
+            hasTurnedIn = false;
 		}			
 		else
 			targetPosition.RemoveAt(0);
